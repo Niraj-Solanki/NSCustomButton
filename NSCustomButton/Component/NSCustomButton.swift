@@ -9,139 +9,114 @@
 import UIKit
 import Lottie
 
-enum ButtonTypeEnum:Int {
-    case large
-    case medium
-    case small
-
-    func font() -> UIFont
-    {
-        switch self {
-        case .medium:
-            return UIFont.boldFont(ofSize: 14.0)
-        case .small:
-            return UIFont.boldFont(ofSize: 12.0)
-        case .large:
-            return UIFont.boldFont(ofSize: 16.0)
-        }
-    }
-
-    func cornerRadius() -> CGFloat {
-        switch self {
-        case .medium,.large:
-            return 8.0
-        case .small:
-            return 4.0
-        }
-    }
-
-    func height() -> CGFloat {
-        switch self {
-        case .medium:
-            return 40
-        case .small:
-            return 28
-        case .large:
-            return 48
-        }
-    }
-}
-
-enum ButtonStyleEnum:Int {
-    case primary
-    case primaryWithIcon
-    case secondary
-    case secondaryWithIcon
-    case tertiary
-    case tertiaryWithIcon
-
-    func backgroundColor(buttonState:UIControl.State) ->UIColor
-    {
-        switch self {
-        case .primary,.primaryWithIcon:
-            switch buttonState {
-            case .normal:
-                return ColorKeys.P500 //App Primary Color
-            case .highlighted:
-                return ColorKeys.P700 //Dark Primary Color
-            default:
-                return #colorLiteral(red: 0.9215686275, green: 0.6392156863, blue: 0.6784313725, alpha: 1) //App Primary Color
-            }
-        case .secondary,.secondaryWithIcon:
-            switch buttonState {
-            case .normal:
-                return ColorKeys.NG100 //White Color
-            case .highlighted:
-                return ColorKeys.P100 //Light Primary Color
-            default:
-                return ColorKeys.NG100 //White Color
-            }
-        case .tertiary,.tertiaryWithIcon:
-            switch buttonState {
-            case .normal:
-                return ColorKeys.NG100 //Clear Color
-            case .highlighted:
-                return ColorKeys.P100 //Light Primary Color
-            default:
-                return ColorKeys.NG100 //Clear Color
-            }
-        }
-    }
-
-    func titleColor() ->UIColor
-    {
-        switch self {
-        case .primary,.primaryWithIcon:
-            return ColorKeys.NG100 //White Color
-        case .secondary,.secondaryWithIcon:
-            return ColorKeys.P500 //App Primary Color
-        case .tertiary,.tertiaryWithIcon:
-            return ColorKeys.P500 //App Primary Color
-        }
-    }
-
-    func borderColor() -> CGColor {
-        switch self {
-       case .primary,.primaryWithIcon:
-        return ColorKeys.CLEAR_COLOR.cgColor //White Color
-        case .secondary,.secondaryWithIcon:
-            return ColorKeys.P500.cgColor //App Primary Color
-        case .tertiary,.tertiaryWithIcon:
-            return ColorKeys.CLEAR_COLOR.cgColor //App Primary Color
-        }
-    }
-
-    func shadowRadius() -> CGFloat {
-        switch self {
-        case .primary,.primaryWithIcon:
-            return 8
-        default:
-            return 0
-        }
-    }
-
-    func shadowHeight() -> CGFloat {
-        switch self {
-        case .primary,.primaryWithIcon:
-            return 4
-        default:
-            return 0
-        }
-    }
-
-    func shadowOpacity() -> Float {
-        switch self {
-            case .primary,.primaryWithIcon,.secondary,.secondaryWithIcon:
-                return 1.0 //White Color
-             case .tertiary,.tertiaryWithIcon:
-                return 0.0 //App Primary Color
-        }
-    }
-}
-
-
 @IBDesignable class CustomButton: UIButton {
 
+    //MARK:- Enums
+    enum ButtonTypeEnum:Int {
+        case large
+        case medium
+        case small
+
+        var font: UIFont
+        {
+            switch self {
+            case .medium:
+                return UIFont.boldFont(ofSize: 14.0)
+            case .small:
+                return UIFont.boldFont(ofSize: 12.0)
+            case .large:
+                return UIFont.boldFont(ofSize: 16.0)
+            }
+        }
+
+        var cornerRadius: CGFloat {
+            switch self {
+            case .medium,.large:
+                return 12.0
+            case .small:
+                return 8.0
+            }
+        }
+
+        var height: CGFloat {
+            switch self {
+            case .medium:
+                return 40
+            case .small:
+                return 28
+            case .large:
+                return 48
+            }
+        }
+    }
+
+    enum ButtonStyleEnum:Int {
+        case primary
+        case primaryWithIcon
+        case secondary
+        case secondaryWithIcon
+        case tertiary
+        case tertiaryWithIcon
+
+        func backgroundColor(buttonState:UIControl.State) ->UIColor
+        {
+            switch self {
+            case .primary,.primaryWithIcon:
+                switch buttonState {
+                case .normal:
+                    return ColorKeys.P500 //App Primary Color
+                case .highlighted:
+                    return ColorKeys.P700 //Dark Primary Color
+                default:
+                    return #colorLiteral(red: 0.9215686275, green: 0.6392156863, blue: 0.6784313725, alpha: 1) //App Primary Color
+                }
+            case .secondary,.secondaryWithIcon:
+                switch buttonState {
+                case .normal:
+                    return ColorKeys.NG100 //White Color
+                case .highlighted:
+                    return ColorKeys.P100 //Light Primary Color
+                default:
+                    return ColorKeys.NG100 //White Color
+                }
+            case .tertiary,.tertiaryWithIcon:
+                switch buttonState {
+                case .normal:
+                    return ColorKeys.NG100 //Clear Color
+                case .highlighted:
+                    return ColorKeys.P100 //Light Primary Color
+                default:
+                    return ColorKeys.NG100 //Clear Color
+                }
+            }
+        }
+
+        var titleColor: UIColor
+        {
+            switch self {
+            case .primary,.primaryWithIcon:
+                return ColorKeys.NG100 //White Color
+            case .secondary,.secondaryWithIcon:
+                return ColorKeys.P500 //App Primary Color
+            case .tertiary,.tertiaryWithIcon:
+                return ColorKeys.P500 //App Primary Color
+            }
+        }
+
+        
+        var borderColor: CGColor {
+            switch self {
+           case .primary,.primaryWithIcon:
+            return ColorKeys.CLEAR_COLOR.cgColor //White Color
+            case .secondary,.secondaryWithIcon:
+                return ColorKeys.P500.cgColor //App Primary Color
+            case .tertiary,.tertiaryWithIcon:
+                return ColorKeys.CLEAR_COLOR.cgColor //App Primary Color
+            }
+        }
+    }
+    
+    
     //MARK:- Objects
     var buttonTypeEnum:ButtonTypeEnum = .medium{
         didSet{
@@ -196,16 +171,6 @@ enum ButtonStyleEnum:Int {
            }
        }
 
-    @IBInspectable private var titleKey:String{
-        get{
-            return buttonTitle
-        }
-        set{
-            buttonTitle = NSLocalizedString(newValue, comment: "")
-        }
-    }
-
-
     //MARK:- Life Cycle
     override init(frame: CGRect) {
         super.init(frame:frame)
@@ -235,6 +200,12 @@ enum ButtonStyleEnum:Int {
     {
         let state = super.state
         backgroundColor = buttonStyleEnum.backgroundColor(buttonState: state)
+        switch state {
+        case .disabled:
+            alpha = 0.5
+        default:
+            alpha = 1
+        }
         return state
     }
 
@@ -245,22 +216,21 @@ enum ButtonStyleEnum:Int {
         
         
         //Font
-        titleLabel?.font = buttonTypeEnum.font()
+        titleLabel?.font = buttonTypeEnum.font
         titleLabel?.textAlignment = .center
         titleLabel?.lineBreakMode = .byTruncatingTail
 
         // TitleColor & BackgroundColor
-        setTitleColor(buttonStyleEnum.titleColor(), for: .normal)
+        setTitleColor(buttonStyleEnum.titleColor, for: .normal)
         backgroundColor = buttonStyleEnum.backgroundColor(buttonState: .normal)
 
         //Border & Corner
-        layer.cornerRadius = buttonTypeEnum.cornerRadius()
+        layer.cornerRadius = buttonTypeEnum.cornerRadius
         layer.borderWidth = 1
-        layer.borderColor = buttonStyleEnum.borderColor()
+        layer.borderColor = buttonStyleEnum.borderColor
 
         updateIconAlignment()
         updateHeight()
-//        updateShadow()
     }
 
     private func updateIconAlignment(){
@@ -281,34 +251,21 @@ enum ButtonStyleEnum:Int {
         // initwithframe
         if translatesAutoresizingMaskIntoConstraints {
             //Manual Update Height
-            frame = CGRect.init(x: frame.origin.x, y: frame.origin.y, width: frame.size.width, height: buttonTypeEnum.height())
+            frame = CGRect.init(x: frame.origin.x, y: frame.origin.y, width: frame.size.width, height: buttonTypeEnum.height)
         }
         else{ //storyboard/xib
             //Update Height Constraint
             if let heightConstraint = constraints.first(where: { $0.firstAttribute == .height })
             {
-                heightConstraint.constant = buttonTypeEnum.height()
+                heightConstraint.constant = buttonTypeEnum.height
             }
             else
             {
                 NSLayoutConstraint.activate([
-                    heightAnchor.constraint(equalToConstant: buttonTypeEnum.height())
+                    heightAnchor.constraint(equalToConstant: buttonTypeEnum.height)
                 ])
             }
         }
-    }
-
-    private func updateShadow()
-    {
-        layer.shadowPath = UIBezierPath(roundedRect: bounds,
-                                        cornerRadius: buttonTypeEnum.cornerRadius()).cgPath
-        layer.shadowColor = buttonStyleEnum.titleColor().cgColor
-        layer.shadowOffset = CGSize(width: 0.0,
-                                    height: buttonStyleEnum.shadowHeight())
-        layer.shadowOpacity = buttonStyleEnum.shadowOpacity()
-        layer.shadowRadius = buttonStyleEnum.shadowRadius()
-        layer.position = center
-        layer.compositingFilter = "multiplyBlendMode"
     }
 
     private func updateButtonTitle(){
@@ -325,7 +282,7 @@ enum ButtonStyleEnum:Int {
 
     private func showLoading(){
         logoAnimation.backgroundColor = buttonStyleEnum.backgroundColor(buttonState: .normal)
-        logoAnimation.layer.cornerRadius = buttonTypeEnum.cornerRadius()
+        logoAnimation.layer.cornerRadius = buttonTypeEnum.cornerRadius
         logoAnimation.contentMode = .scaleAspectFit
         logoAnimation.translatesAutoresizingMaskIntoConstraints = false
         addSubview(logoAnimation)

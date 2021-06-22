@@ -19,6 +19,7 @@ struct ColorKeys {
     static let P900:UIColor = UIColor(named: "P900", in: Bundle(for:AppDelegate.self), compatibleWith: .none) ?? .red
     
     static let NG100:UIColor = UIColor(named: "NG100", in: Bundle(for:AppDelegate.self), compatibleWith: .none) ?? .red
+    static let NG100_90:UIColor = UIColor(named: "NG100(0.9)", in: Bundle(for:AppDelegate.self), compatibleWith: .none) ?? .red
     static let NG200:UIColor = UIColor(named: "NG200", in: Bundle(for:AppDelegate.self), compatibleWith: .none) ?? .red
     static let NG300:UIColor = UIColor(named: "NG300", in: Bundle(for:AppDelegate.self), compatibleWith: .none) ?? .red
     static let NG400:UIColor = UIColor(named: "NG400", in: Bundle(for:AppDelegate.self), compatibleWith: .none) ?? .red
