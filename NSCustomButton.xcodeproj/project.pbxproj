@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,22 @@
 		09518471268250480090A5AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0951846F268250480090A5AA /* Main.storyboard */; };
 		09518473268250510090A5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09518472268250510090A5AA /* Assets.xcassets */; };
 		09518476268250510090A5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09518474268250510090A5AA /* LaunchScreen.storyboard */; };
+		0951847F268258B40090A5AA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0951847E268258B40090A5AA /* Color.xcassets */; };
+		09518487268259DF0090A5AA /* NSCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09518486268259DF0090A5AA /* NSCustomButton.swift */; };
+		09518490268260F10090A5AA /* UIFont+AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0951848F268260F10090A5AA /* UIFont+AppFont.swift */; };
+		095184A4268262370090A5AA /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09518499268262370090A5AA /* Cabin-Medium.ttf */; };
+		095184A5268262370090A5AA /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0951849A268262370090A5AA /* Cabin-SemiBoldItalic.ttf */; };
+		095184A6268262370090A5AA /* Cabin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0951849B268262370090A5AA /* Cabin-SemiBold.ttf */; };
+		095184A7268262370090A5AA /* FONTLOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0951849C268262370090A5AA /* FONTLOG.txt */; };
+		095184A8268262370090A5AA /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0951849D268262370090A5AA /* Cabin-MediumItalic.ttf */; };
+		095184A9268262370090A5AA /* Cabin-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0951849E268262370090A5AA /* Cabin-BoldItalic.ttf */; };
+		095184AA268262370090A5AA /* Cabin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0951849F268262370090A5AA /* Cabin-Regular.ttf */; };
+		095184AC268262370090A5AA /* Cabin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 095184A1268262370090A5AA /* Cabin-Bold.ttf */; };
+		095184AD268262370090A5AA /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 095184A2268262370090A5AA /* Readme.txt */; };
+		095184AE268262370090A5AA /* Cabin-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 095184A3268262370090A5AA /* Cabin-Italic.ttf */; };
+		095184B3268262C10090A5AA /* Colorkeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095184B2268262C10090A5AA /* Colorkeys.swift */; };
+		095184B8268263C90090A5AA /* ButtonLoader.json in Resources */ = {isa = PBXBuildFile; fileRef = 095184B7268263C90090A5AA /* ButtonLoader.json */; };
+		FEDC919320CC301086A9F749 /* Pods_NSCustomButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6FC557814E1EE162A014A8F /* Pods_NSCustomButton.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +40,25 @@
 		09518472268250510090A5AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09518475268250510090A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09518477268250510090A5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0951847E268258B40090A5AA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		09518486268259DF0090A5AA /* NSCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCustomButton.swift; sourceTree = "<group>"; };
+		0951848A26825C5F0090A5AA /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0951848F268260F10090A5AA /* UIFont+AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFont.swift"; sourceTree = "<group>"; };
+		09518499268262370090A5AA /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
+		0951849A268262370090A5AA /* Cabin-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		0951849B268262370090A5AA /* Cabin-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-SemiBold.ttf"; sourceTree = "<group>"; };
+		0951849C268262370090A5AA /* FONTLOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FONTLOG.txt; sourceTree = "<group>"; };
+		0951849D268262370090A5AA /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0951849E268262370090A5AA /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0951849F268262370090A5AA /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
+		095184A1268262370090A5AA /* Cabin-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Bold.ttf"; sourceTree = "<group>"; };
+		095184A2268262370090A5AA /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		095184A3268262370090A5AA /* Cabin-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Italic.ttf"; sourceTree = "<group>"; };
+		095184B2268262C10090A5AA /* Colorkeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colorkeys.swift; sourceTree = "<group>"; };
+		095184B7268263C90090A5AA /* ButtonLoader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ButtonLoader.json; sourceTree = "<group>"; };
+		B6FC557814E1EE162A014A8F /* Pods_NSCustomButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NSCustomButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3B950424AFFECDA74D70DAD /* Pods-NSCustomButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCustomButton.debug.xcconfig"; path = "Target Support Files/Pods-NSCustomButton/Pods-NSCustomButton.debug.xcconfig"; sourceTree = "<group>"; };
+		E38EACD757C80B1F1C028048 /* Pods-NSCustomButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NSCustomButton.release.xcconfig"; path = "Target Support Files/Pods-NSCustomButton/Pods-NSCustomButton.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEDC919320CC301086A9F749 /* Pods_NSCustomButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +78,8 @@
 			children = (
 				09518468268250480090A5AA /* NSCustomButton */,
 				09518467268250480090A5AA /* Products */,
+				2A5DBB508CF6A80C3F299C14 /* Pods */,
+				7AE6C32D136AEE944D962387 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +94,88 @@
 		09518468268250480090A5AA /* NSCustomButton */ = {
 			isa = PBXGroup;
 			children = (
+				095184B6268263B10090A5AA /* Assets */,
+				095184B1268262AB0090A5AA /* Color */,
+				09518498268262370090A5AA /* Fonts */,
+				09518493268261C50090A5AA /* Extensions */,
+				0951848926825B730090A5AA /* Component */,
 				09518469268250480090A5AA /* AppDelegate.swift */,
 				0951846B268250480090A5AA /* SceneDelegate.swift */,
 				0951846D268250480090A5AA /* ViewController.swift */,
 				0951846F268250480090A5AA /* Main.storyboard */,
-				09518472268250510090A5AA /* Assets.xcassets */,
 				09518474268250510090A5AA /* LaunchScreen.storyboard */,
 				09518477268250510090A5AA /* Info.plist */,
 			);
 			path = NSCustomButton;
+			sourceTree = "<group>";
+		};
+		0951848926825B730090A5AA /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				09518486268259DF0090A5AA /* NSCustomButton.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		09518493268261C50090A5AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0951848F268260F10090A5AA /* UIFont+AppFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		09518498268262370090A5AA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				09518499268262370090A5AA /* Cabin-Medium.ttf */,
+				0951849A268262370090A5AA /* Cabin-SemiBoldItalic.ttf */,
+				0951849B268262370090A5AA /* Cabin-SemiBold.ttf */,
+				0951849C268262370090A5AA /* FONTLOG.txt */,
+				0951849D268262370090A5AA /* Cabin-MediumItalic.ttf */,
+				0951849E268262370090A5AA /* Cabin-BoldItalic.ttf */,
+				0951849F268262370090A5AA /* Cabin-Regular.ttf */,
+				095184A1268262370090A5AA /* Cabin-Bold.ttf */,
+				095184A2268262370090A5AA /* Readme.txt */,
+				095184A3268262370090A5AA /* Cabin-Italic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		095184B1268262AB0090A5AA /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				095184B2268262C10090A5AA /* Colorkeys.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		095184B6268263B10090A5AA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				095184B7268263C90090A5AA /* ButtonLoader.json */,
+				09518472268250510090A5AA /* Assets.xcassets */,
+				0951847E268258B40090A5AA /* Color.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2A5DBB508CF6A80C3F299C14 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3B950424AFFECDA74D70DAD /* Pods-NSCustomButton.debug.xcconfig */,
+				E38EACD757C80B1F1C028048 /* Pods-NSCustomButton.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7AE6C32D136AEE944D962387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0951848A26825C5F0090A5AA /* Lottie.framework */,
+				B6FC557814E1EE162A014A8F /* Pods_NSCustomButton.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0951847A268250510090A5AA /* Build configuration list for PBXNativeTarget "NSCustomButton" */;
 			buildPhases = (
+				8878915A4D388DC89633814F /* [CP] Check Pods Manifest.lock */,
 				09518462268250480090A5AA /* Sources */,
 				09518463268250480090A5AA /* Frameworks */,
 				09518464268250480090A5AA /* Resources */,
+				8683750EAD46B330C0B1E523 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,22 +237,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				095184B8268263C90090A5AA /* ButtonLoader.json in Resources */,
 				09518476268250510090A5AA /* LaunchScreen.storyboard in Resources */,
+				095184A8268262370090A5AA /* Cabin-MediumItalic.ttf in Resources */,
+				095184A5268262370090A5AA /* Cabin-SemiBoldItalic.ttf in Resources */,
+				095184A7268262370090A5AA /* FONTLOG.txt in Resources */,
+				095184AE268262370090A5AA /* Cabin-Italic.ttf in Resources */,
+				0951847F268258B40090A5AA /* Color.xcassets in Resources */,
+				095184A9268262370090A5AA /* Cabin-BoldItalic.ttf in Resources */,
+				095184AD268262370090A5AA /* Readme.txt in Resources */,
 				09518473268250510090A5AA /* Assets.xcassets in Resources */,
+				095184A4268262370090A5AA /* Cabin-Medium.ttf in Resources */,
+				095184A6268262370090A5AA /* Cabin-SemiBold.ttf in Resources */,
+				095184AA268262370090A5AA /* Cabin-Regular.ttf in Resources */,
+				095184AC268262370090A5AA /* Cabin-Bold.ttf in Resources */,
 				09518471268250480090A5AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8683750EAD46B330C0B1E523 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSCustomButton/Pods-NSCustomButton-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NSCustomButton/Pods-NSCustomButton-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NSCustomButton/Pods-NSCustomButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8878915A4D388DC89633814F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NSCustomButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09518462268250480090A5AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09518490268260F10090A5AA /* UIFont+AppFont.swift in Sources */,
+				095184B3268262C10090A5AA /* Colorkeys.swift in Sources */,
 				0951846E268250480090A5AA /* ViewController.swift in Sources */,
 				0951846A268250480090A5AA /* AppDelegate.swift in Sources */,
 				0951846C268250480090A5AA /* SceneDelegate.swift in Sources */,
+				09518487268259DF0090A5AA /* NSCustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +453,7 @@
 		};
 		0951847B268250510090A5AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3B950424AFFECDA74D70DAD /* Pods-NSCustomButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +472,7 @@
 		};
 		0951847C268250510090A5AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E38EACD757C80B1F1C028048 /* Pods-NSCustomButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
