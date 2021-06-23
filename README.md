@@ -15,7 +15,7 @@ Fonts:- Custom Fonts (You can use your app font style)
 <img src="/Read%20Files/CustomButton.gif" width="292" height="632.6"> <img src="/Read%20Files/0.png" width="292" height="632.6"> 
 
 #### How to Use Button Via XIB / StoryBoard with Different Styles & Size <br>
-<img src="/Read%20Files/1.png" width="1240" height="504"> <br>
+<img src="/Read%20Files/1.png"> <br>
 
 #### How to Use Button Via Programmatically with Different Styles & Size
 
