@@ -14,7 +14,7 @@
 		09518473268250510090A5AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09518472268250510090A5AA /* Assets.xcassets */; };
 		09518476268250510090A5AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09518474268250510090A5AA /* LaunchScreen.storyboard */; };
 		0951847F268258B40090A5AA /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0951847E268258B40090A5AA /* Color.xcassets */; };
-		09518487268259DF0090A5AA /* NSCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09518486268259DF0090A5AA /* NSCustomButton.swift */; };
+		09518487268259DF0090A5AA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09518486268259DF0090A5AA /* CustomButton.swift */; };
 		09518490268260F10090A5AA /* UIFont+AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0951848F268260F10090A5AA /* UIFont+AppFont.swift */; };
 		095184A4268262370090A5AA /* Cabin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09518499268262370090A5AA /* Cabin-Medium.ttf */; };
 		095184A5268262370090A5AA /* Cabin-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0951849A268262370090A5AA /* Cabin-SemiBoldItalic.ttf */; };
@@ -41,7 +41,7 @@
 		09518475268250510090A5AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09518477268250510090A5AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0951847E268258B40090A5AA /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
-		09518486268259DF0090A5AA /* NSCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSCustomButton.swift; sourceTree = "<group>"; };
+		09518486268259DF0090A5AA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0951848A26825C5F0090A5AA /* Lottie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Lottie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0951848F268260F10090A5AA /* UIFont+AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+AppFont.swift"; sourceTree = "<group>"; };
 		09518499268262370090A5AA /* Cabin-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Medium.ttf"; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		0951848926825B730090A5AA /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				09518486268259DF0090A5AA /* NSCustomButton.swift */,
+				09518486268259DF0090A5AA /* CustomButton.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -309,7 +309,7 @@
 				0951846E268250480090A5AA /* MediumButtonController.swift in Sources */,
 				0951846A268250480090A5AA /* AppDelegate.swift in Sources */,
 				0951846C268250480090A5AA /* SceneDelegate.swift in Sources */,
-				09518487268259DF0090A5AA /* NSCustomButton.swift in Sources */,
+				09518487268259DF0090A5AA /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

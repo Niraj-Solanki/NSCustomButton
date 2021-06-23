@@ -52,16 +52,13 @@ import Lottie
 
     enum ButtonStyleEnum:Int {
         case primary
-        case primaryWithIcon
         case secondary
-        case secondaryWithIcon
-        case tertiary
-        case tertiaryWithIcon
+        case textiary
 
         func backgroundColor(buttonState:UIControl.State) ->UIColor
         {
             switch self {
-            case .primary,.primaryWithIcon:
+            case .primary:
                 switch buttonState {
                 case .normal:
                     return ColorKeys.P500 //App Primary Color
@@ -70,7 +67,7 @@ import Lottie
                 default:
                     return #colorLiteral(red: 0.9215686275, green: 0.6392156863, blue: 0.6784313725, alpha: 1) //App Primary Color
                 }
-            case .secondary,.secondaryWithIcon:
+            case .secondary:
                 switch buttonState {
                 case .normal:
                     return ColorKeys.NG100 //White Color
@@ -79,7 +76,7 @@ import Lottie
                 default:
                     return ColorKeys.NG100 //White Color
                 }
-            case .tertiary,.tertiaryWithIcon:
+            case .textiary:
                 switch buttonState {
                 case .normal:
                     return ColorKeys.NG100 //Clear Color
@@ -94,11 +91,11 @@ import Lottie
         var titleColor: UIColor
         {
             switch self {
-            case .primary,.primaryWithIcon:
+            case .primary:
                 return ColorKeys.NG100 //White Color
-            case .secondary,.secondaryWithIcon:
+            case .secondary:
                 return ColorKeys.P500 //App Primary Color
-            case .tertiary,.tertiaryWithIcon:
+            case .textiary:
                 return ColorKeys.P500 //App Primary Color
             }
         }
@@ -106,11 +103,11 @@ import Lottie
         
         var borderColor: CGColor {
             switch self {
-           case .primary,.primaryWithIcon:
+           case .primary:
             return ColorKeys.CLEAR_COLOR.cgColor //White Color
-            case .secondary,.secondaryWithIcon:
+            case .secondary:
                 return ColorKeys.P500.cgColor //App Primary Color
-            case .tertiary,.tertiaryWithIcon:
+            case .textiary:
                 return ColorKeys.CLEAR_COLOR.cgColor //App Primary Color
             }
         }
@@ -118,7 +115,7 @@ import Lottie
     
     
     //MARK:- Objects
-    var buttonTypeEnum:ButtonTypeEnum = .medium{
+    var buttonTypeEnum:ButtonTypeEnum = .medium {
         didSet{
             updateUI()
         }
@@ -129,21 +126,29 @@ import Lottie
             updateUI()
         }
     }
-
+    
+    /// Default Icon Alignment is left.
     var isIconOnRightSide = false {
         didSet{
             updateIconAlignment()
         }
     }
 
-    var buttonTitle = ""{
+    var buttonTitle = "" {
         didSet{
-            updateButtonTitle()
+            setTitle(buttonTitle, for: .normal)
         }
     }
+    
     private let logoAnimation = AnimationView(name: "ButtonLoader")
+    
+    var isShowLoading:Bool = false{
+        didSet{
+            isShowLoading ? showLoading() :hideLoading()
+        }
+    }
 
-    // MARK: - IBInspectable properties
+    // MARK: - IBInspectable Properties
     @IBInspectable private var CustomType:Int {
         get {
             return self.buttonTypeEnum.rawValue
@@ -211,10 +216,7 @@ import Lottie
 
     //MARK:- Update
     private func updateUI(){
-        //Default ButtonType set as Custom
-        
-        
-        
+      
         //Font
         titleLabel?.font = buttonTypeEnum.font
         titleLabel?.textAlignment = .center
@@ -242,7 +244,6 @@ import Lottie
         {
             semanticContentAttribute = .forceLeftToRight
             imageEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
-
         }
     }
 
@@ -267,18 +268,6 @@ import Lottie
             }
         }
     }
-
-    private func updateButtonTitle(){
-        setTitle(buttonTitle, for: .normal)
-    }
-
-    var isShowLoading:Bool = false{
-        didSet{
-            isShowLoading ? showLoading() :hideLoading()
-        }
-    }
-
-
 
     private func showLoading(){
         logoAnimation.backgroundColor = buttonStyleEnum.backgroundColor(buttonState: .normal)
